@@ -1,0 +1,132 @@
+html, body, .note-wrapper-single
+{
+    height: 100%;
+}
+
+body {
+  background-image: url("https://cdn.dribbble.com/users/5008510/screenshots/10840297/media/df7b4d1933701ea86c581ac730063966.gif");
+ }
+
+.App {
+    height: 100%;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: blue;
+  height: 150px;
+  padding: 20px;
+  color: peachpuff;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.notes-wrapper{
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.add-note button{
+  padding: 8px 10px;
+  background-color: salmon;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: blue;
+}
+
+.list-notes-top{
+  height: 110%;
+  width: 40%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: palegreen;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.current-note{
+  background-color: lightskyblue;
+  color: black;
+  height: 100%;
+  width: 68%;
+
+
+
+}
+
+.list-item-top{
+
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+.list-item{
+
+  list-style: none;
+  text-align: left;
+  height: 30px;
+  display: inline-flex;
+  width: 90%;
+}
+
+.delete-note{
+
+  position: absolute;
+}
+
+.add-note, .delete-note{
+
+  border-radius: 30%;
+  padding: 6px 8px;
+  float: right;
+  background-color: coral;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.add-note{
+  margin: 20px 440px 10px;
+  
+}
+
+input[type='text']{
+
+  height: 30px;
+  width: 90%;
+  border: none;
+  resize: none;
+  color: blue;
+  font-size: 25px;
+
+}
+
+textarea{
+
+  height: 405px;
+  width: 90%;
+  border: none;
+  resize: none;
+  scroll-behavior: auto;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
